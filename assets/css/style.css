@@ -72,6 +72,22 @@ a {
     opacity: 0.9;
 }
 
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* Header */
 
 header {
@@ -342,7 +358,8 @@ header {
     align-items: center;
 }
 
-.popular .course-item .info .title {
+.popular .course-item .info .title a {
+    padding-right: 8px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -355,12 +372,12 @@ header {
 }
 
 .popular .course-item .info .value {
-    color: #FEA31B;
+    color: #fea31b;
 }
 
 .popular .course-item .info .info-desc {
     margin-top: 6px;
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.4rem;
     line-height: 1.85;
 }
